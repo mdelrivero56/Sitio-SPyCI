@@ -144,6 +144,43 @@ body:not(.ishome){padding-bottom:4.6rem}body.ishome #mbar{display:none}.toast{bo
 .rq .it{display:flex;gap:1rem;align-items:center;padding:.8rem 0;border-bottom:1px solid var(--line)}.rq .it:last-child{border:0}.rq .it span{font-size:2rem;width:3rem;text-align:center;flex:none}.rq .it img{width:3rem;height:2.4rem;object-fit:contain;flex:none}.rq .it small{display:block;opacity:.8}
 .rq .st{display:flex;gap:.9rem;align-items:center;margin:.6rem 0;font-weight:600}.rq .st i{flex:none;width:2.4rem;height:2.4rem;border-radius:50%;background:#9a6bd0;color:#fff;font-style:normal;font-weight:700;display:grid;place-items:center}
 .rq .nt{background:#f3f2ee;border-radius:10px;padding:.9rem 1rem;margin-top:1rem;line-height:1.9}
+/* MICROSITIO SIMPLE: panel izquierdo + centro */
+.det{grid-template-columns:290px minmax(0,1fr);padding:1.2rem 3vw 2rem}
+.side button{font-size:1rem;padding:.9rem 1rem;min-height:3.6rem}.side button img{height:2.4rem;width:2.6rem}
+.main{min-height:60vh}.hd{padding:1.5rem 1.5rem .6rem}.hd h1{font-size:clamp(1.8rem,3vw,2.6rem)}.hd p{font-size:1.1rem}.pick{color:var(--pur2);font-weight:700;margin-top:1rem}
+.info{margin:1rem 1.5rem}.info p{font-size:1rem}.btns button{font-size:1.05rem;min-height:3rem}
+@media(max-width:1000px){.det{grid-template-columns:1fr;padding:.8rem 3vw 1.5rem}.side .sg{display:grid;grid-template-columns:1fr 1fr}.side button{flex-direction:column;text-align:center;gap:.3rem;font-size:.9rem;border-left:0;border-bottom:4px solid transparent;border-right:1px solid var(--line);min-height:5.6rem;justify-content:center}.side button span{flex:none}.side button.on{border-bottom-color:var(--pur)}.hd img.il{height:7rem}.pick{display:none}}
+@media(max-width:760px){html,body{overflow-x:hidden}.ph>.pill{display:none}.ph>span{display:none}.ph{padding:.5rem 4vw;gap:3vw}.gb .r{flex-wrap:wrap;gap:.6rem;font-size:.8rem}.gb{padding:.5rem 3vw}.gb .r a:not(.x),.gb .r button{white-space:nowrap}}
+/* PANEL IZQUIERDO INSTITUCIONAL */
+.side{border:1px solid #cfd6e6;border-radius:4px;box-shadow:none;background:#fff}
+.side h3{background:var(--navy);color:#fff;border-radius:0;padding:.9rem 1.1rem;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.side h3 img,.side h3 small{display:none}
+.side button{border-left:4px solid transparent;border-bottom:1px solid #e3e7f1;padding:.85rem 1rem;font-weight:500;font-size:1rem;gap:.8rem;color:var(--ink);background:#fff}
+.side button img{height:1.7rem;width:1.7rem;opacity:.85}
+.side button:after{content:"›";margin-left:auto;font-size:1.3rem;color:#8a97b8}
+.side button:last-child{border-bottom:0}
+.side button:hover{background:#f4f6fb}
+.side button.on{background:#e8eefb;border-left-color:var(--navy);font-weight:700;color:var(--navy)}.side button.on:after{color:var(--navy)}
+@media(max-width:1000px){.side button{border-left:0;border-bottom:1px solid #e3e7f1;border-right:1px solid #e3e7f1;font-size:.88rem;min-height:5rem}.side button:after{display:none}.side button.on{background:#e8eefb;border-bottom:4px solid var(--navy)}}
+/* COLORES INSTITUCIONALES + PANEL SIMPLE */
+.det{--blue:#004EAA;--navy:#004EAA;--pur:#9568C6;--pur2:#7d52b0;--lil:#efe9f8}
+.side{border:1px solid #d5dbe8}
+.side h3{background:#004EAA;font-size:.95rem}
+.side button img{display:none}
+.side button{padding:1rem 1.1rem;font-size:1.05rem;min-height:3.4rem;border-left:5px solid transparent}
+.side button:after{color:#9568C6}
+.side button.on{background:#efe9f8;border-left-color:#9568C6;color:#004EAA}.side button.on:after{color:#004EAA}
+.btns button,.pill{background:#9568C6}.btns button:hover{background:#7d52b0}
+@media(max-width:1000px){.side button{min-height:4rem;border-left:0}.side button.on{border-bottom:4px solid #9568C6}}
+/* ELEMENTO GRAFICO EN CADA OPCION DEL PANEL */
+.side button img{display:block;flex:none;width:2.6rem;height:2.6rem;padding:.4rem;border-radius:50%;background:#efe9f8;border:2px solid #d9c9ee;object-fit:contain;opacity:1}
+.side button.on img{background:#fff;border-color:#9568C6}
+@media(max-width:1000px){.side button img{width:2.8rem;height:2.8rem}}
+/* ICONOS CLAROS */
+.side button .gi{flex:none;width:3rem;height:3rem;border-radius:50%;background:#efe9f8;border:2px solid #d9c9ee;display:grid;place-items:center;font-size:1.6rem;line-height:1;font-weight:400}
+.side button.on .gi{background:#fff;border-color:#9568C6}
+@media(max-width:1000px){.side button .gi{width:3.2rem;height:3.2rem;font-size:1.8rem}}
+.side button .gi svg{width:1.6rem;height:1.6rem}.side button .gi{color:#004EAA}.side button.on .gi{color:#9568C6}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head>
 <body><div id="top"></div><div id="app"></div><nav id="mbar" aria-label="Menú móvil"><a href="#/" data-n="home"><i>🏠</i>Inicio</a><a href="#/tramites" data-n="tr"><i>📄</i>Trámites</a><button class="ls" data-a="page"><i>🔊</i>Escuchar</button><button data-a="donde"><i>📍</i>¿Dónde?</button><button data-a="menu"><i>☰</i>Menú</button></nav><dialog id="dlg"></dialog><dialog id="rq"></dialog><div class="toast" id="toast"></div>
@@ -236,35 +273,21 @@ function go(i){cur=(i+LANGS.length)%LANGS.length;
 function start(){clearInterval(timer);cancelAnimationFrame(prog);let t0=performance.now(),last=t0;const bar=$('#prog');
  const tick=n=>{if(!bar||!document.body.contains(bar))return;if(paused)t0+=n-last;last=n;const pc=Math.min(100,(n-t0)/60);for(const b of [bar,$('#prog2')])if(b){b.style.width=pc+'%';b.parentNode.style.setProperty('--p',pc+'%')};prog=requestAnimationFrame(tick)};prog=requestAnimationFrame(tick);
  timer=setInterval(()=>{if(!paused&&!spkOn){stop();go(cur+1)}},6000)}
-function listado(q){
- head('p');const f=TR.filter(t=>!q||(t.n+t.s+t.d).toLowerCase().includes(q.toLowerCase()));const ord=ORD.filter(id=>f.includes(getT(id)));
- const card=id=>{const t=getT(id);
-  return `<div class="card"><img src="${IMG[t.img]}" alt=""><div class="c" style="width:100%;display:flex;flex-direction:column;align-items:center;gap:.5rem"><b>${t.n}</b><small>${t.s}</small><div class="acts"><a class="how" href="#/t/${id}">📄 Cómo se hace</a><button class="how alt" data-a="req" data-id="${id}">✅ ¿Qué necesito?</button></div></div></div>`};
- $('#app').innerHTML=`<section class="mh"><img class="w" src="${IMG.woman}" alt=""><div class="t"><small>MICROSITIO</small><h1>Pueblos Indígenas de Chihuahua</h1><p>Información clara y sencilla sobre apoyos y trámites para nuestras comunidades.</p><a class="pill" href="#" data-a="goto">Conoce los trámites y apoyos ➜</a></div>
- <div class="lis"><button class="bg" data-a="page" aria-label="Escuchar">🔊</button><div><div class="bub">Escucha esta información en tu idioma</div><small>Haz clic en el ícono de la bocina para escuchar el contenido.</small></div></div></section>
- <div class="wrap" id="grid"><h2>¿Qué necesitas?</h2><p>Toca una opción para ver cómo se hace y qué requisitos pide.${q?` Resultados para “${esc(q)}”.`:''}</p>
- ${ord.length?`<div class="grid">${ord.map(card).join('')}</div>`:'<div class="none">No encontramos resultados. Prueba con otra palabra.</div>'}</div>`;scrollTo(0,0)}
-function detalle(id){
- head('s');const t=getT(id),pasos=PASOS(t);
- const secs=[['nombre','Nombre del trámite',t.n],['sirve','¿Para qué sirve?',t.d],['quien','¿Quiénes pueden solicitarlo?',t.w],['docs','Documentos necesarios',NEED.map(n=>n[1]).join(', ')],['pasos','Pasos para realizarlo',pasos.join(' ')]];
- const need=NEED.concat(id==='funerario'?[['n1','Acta de defunción','Del familiar fallecido.']]:[]);
- $('#app').innerHTML=`<section class="sh"><img class="w" src="${IMG.dwoman}" alt=""><div class="t"><small>Pueblos y comunidades indígenas de Chihuahua</small><h1>Apoyos y servicios</h1><p>Conoce los trámites, apoyos y programas que el Gobierno del Estado pone a tu disposición para mejorar tu bienestar y el de tu comunidad.</p><a class="pill" href="#/tramites">Conoce más ➜</a></div>
- <button class="vz" data-a="page"><span class="bg">🔊</span>Escucha esta información en voz alta</button></section>
- <div class="det"><aside><div class="side"><h3><img src="${IMG.s2}" alt=""><span>TRÁMITES Y APOYOS<small>Selecciona el servicio que necesitas</small></span></h3>
- ${SIDE.map(s=>{const x=getT(s);return`<button class="${s===id?'on':''}" data-a="to" data-id="${s}"><img src="${IMG[x.ic]}" alt=""><span>${x.n}</span>›</button>`}).join('')}
- <div class="jun">Juntos por nuestras comunidades indígenas</div></div></aside>
- <main class="main"><div class="crumb"><a href="#/">🏠 Inicio</a> › <a href="#/tramites">Trámites y apoyos</a> › <span>${t.n}</span></div>
- <div class="hd"><img class="il" src="${IMG[t.big||t.img]}" alt=""><div style="flex:1;min-width:240px"><h1>${t.n}</h1><h4>${t.sub}</h4><p>${t.d}</p>
- <div class="btns"><button data-a="read">🔊 Escuchar información</button><button data-a="need">📄 ¿Qué necesito?</button></div></div></div>
+const GI={cultural:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v3C7 7.5 5 10 5 13.5 5 18 8 21 12 21s7-3 7-7.5C19 10 17 7.5 14 6V3"/><path d="M6 12.5h12"/><path d="M9 16.5l1.5-2 1.5 2 1.5-2 1.5 2"/></svg>`,deportivo:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 01-8 0z"/><path d="M8 6H4v1.5A3.5 3.5 0 007.5 11H8"/><path d="M16 6h4v1.5a3.5 3.5 0 01-3.5 3.5H16"/><path d="M12 13v4"/><path d="M9 21h6"/><path d="M10 17h4v4"/></svg>`,sociales:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 10.5s-3.5-2-3.5-4.6A2 2 0 0112 5a2 2 0 013.5.9c0 2.6-3.5 4.6-3.5 4.6z"/><path d="M3 15h3.5l3.5 2.5h5a1.5 1.5 0 000-3H12"/><path d="M15 16.8l4-2.3a1.6 1.6 0 011.8 2.6L15.5 20.5H9L6.5 18.5"/></svg>`,salud:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>`,vivienda:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M6 10v11h12V10"/><path d="M16 6V4h2.5v4.5"/><path d="M10 21v-5h4v5"/><path d="M10 12.5h4"/></svg>`,funerario:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="1.7"/><circle cx="12" cy="4" r="2.2"/><circle cx="16.3" cy="7.1" r="2.2"/><circle cx="14.7" cy="12" r="2.2"/><circle cx="9.3" cy="12" r="2.2"/><circle cx="7.7" cy="7.1" r="2.2"/><path d="M12 14.5V22"/><path d="M12 19c2.5 0 4-1 4.5-3"/></svg>`,estancia:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20V6"/><path d="M3 15h18v5"/><path d="M21 15v-2.5A2.5 2.5 0 0018.5 10H11v5"/><path d="M5.5 12.2h3.5a1.1 1.1 0 010 2.2H5.5a1.1 1.1 0 010-2.2z"/></svg>`};
+function micro(id,q){
+ head('s');const L2=ORD.filter(k=>{const t=getT(k);return !q||(t.n+t.s+t.d).toLowerCase().includes(q.toLowerCase())});
+ const t=id?getT(id):null;window._t=t;
+ const side=`<div class="side"><h3><img src="${IMG.s2}" alt=""><span>APOYOS Y TRÁMITES<small>Toca el que necesitas</small></span></h3><div class="sg">${L2.length?L2.map(k=>{const x=getT(k);return`<button class="${k===id?'on':''}" data-a="to" data-id="${k}"><b class="gi" aria-hidden="true">${GI[k]}</b><span>${x.n}</span></button>`}).join(''):'<p class="none">Sin resultados. Prueba otra palabra.</p>'}</div></div>`;
+ const body=t?`<div class="hd"><img class="il" src="${IMG[t.big||t.img]}" alt=""><div style="flex:1;min-width:240px"><h1>${t.n}</h1><h4>${t.sub}</h4><p>${t.d}</p>
+ <div class="btns"><button data-a="read">🔊 Escuchar</button><button data-a="need">📄 ¿Qué necesito?</button></div></div></div>
  <div class="info"><span class="ic">i</span><div><b>¿Quiénes pueden solicitarlo?</b><p>${t.w}</p></div></div>
- <h3 id="need" style="scroll-margin-top:1rem">✅ Requisitos: ¿qué necesito?</h3><div class="need">${need.map(n=>`<div><img src="${IMG[n[0]]}" alt=""><b>${n[1]}</b>${n[2]}</div>`).join('')}</div>
- <div class="info" style="margin-top:1rem"><span class="ic">📍</span><div><b>¿Dónde acudir?</b><p>${DONDE}</p></div></div>
- ${t.url?`<div style="margin:0 1.2rem 1.2rem"><a class="pill" href="${t.url}" target="_blank" rel="noopener">Hacer el trámite en línea</a></div>`:''}</main>
- <aside><div class="rb"><h3>🎧 Escucha la información</h3><p>Selecciona qué parte deseas escuchar:</p><button class="dd" data-a="dd">🔊 Nombre del trámite <span>⌄</span></button>
- <div class="lst" id="lst">${secs.map(s=>`<button class="pl" data-a="sec" data-k="${t.id}.${s[0]}" data-t="${esc(s[1]+'. '+s[2])}"><i>▶</i>${s[1]}</button>`).join('')}</div></div>
- <div class="rb"><h3>📋 Pasos para hacerlo</h3>${pasos.map((p,i)=>`<div class="step"><i>${i+1}</i><span>${p}</span></div>`).join('')}
- <button class="lbox" data-a="sec" data-k="${t.id}.todo" data-t="${esc(t.n+'. '+t.d+' '+t.w+' '+pasos.join(' '))}"><span class="bg">🔊</span>Puedes escuchar cada sección por separado o toda la información.</button></div></aside></div>`;
- window._t=t;scrollTo(0,0)}
+ <div class="info"><span class="ic">📍</span><div><b>¿Dónde acudir?</b><p>${DONDE}</p></div></div>
+ ${t.url?`<div style="margin:0 1.2rem 1.2rem"><a class="pill" href="${t.url}" target="_blank" rel="noopener">Hacer el trámite en línea</a></div>`:''}`
+ :`<div class="hd"><div style="flex:1;min-width:240px"><h1>Pueblos Indígenas de Chihuahua</h1><h4>Apoyos y trámites del Gobierno del Estado</h4><p>Información clara y sencilla para nuestras comunidades.</p>
+ <p class="pick">👈 Elige a la izquierda lo que necesitas.</p><div class="btns"><button data-a="page">🔊 Escuchar</button></div></div></div>`;
+ $('#app').innerHTML=`<div class="det"><aside>${side}</aside><main class="main" id="center">${body}</main></div>`;
+ if(t&&innerWidth<=1000)$('#center').scrollIntoView();else scrollTo(0,0)}
+const listado=q=>micro(null,q),detalle=id=>micro(id);
 function reqModal(id){const t=getT(id),d=$('#rq');window._r=t;
  const ic=k=>IMG[k]?`<img src="${IMG[k]}" alt="">`:`<span>${k}</span>`;
  d.innerHTML=`<div class="rq"><button class="x" data-a="rqx">✕ Cerrar</button><div class="ico"><img src="${IMG[t.ic]||IMG[t.img]}" alt=""></div><h2>${t.n}</h2><p class="su">${t.sub}</p>
@@ -295,7 +318,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b
  else if(a==='como')modal('¿Cómo saberlo?','<p>Este es un sitio oficial del Gobierno del Estado de Chihuahua.</p>')
  else if(a==='transp')modal('Transparencia','<p>Consulta la información de transparencia en el portal chihuahua.gob.mx.</p>')});
 function route(){document.body.classList.toggle('ishome',!/^#\/t/.test(location.hash));stop();clearInterval(timer);cancelAnimationFrame(prog);const h=location.hash.replace(/^#\/?/,'');
- if(h.startsWith('t/')){const [id,x]=h.slice(2).split('/');detalle(id);if(x==='req')setTimeout(()=>$('#need').scrollIntoView({behavior:'smooth'}),50)}else if(h.startsWith('tramites'))listado(new URLSearchParams(h.split('?')[1]||'').get('q'));else home()}
+ if(h.startsWith('t/')){detalle(h.slice(2).split('/')[0])}else if(h.startsWith('tramites'))listado(new URLSearchParams(h.split('?')[1]||'').get('q'));else home()}
 $('#rq').addEventListener('close',()=>stop());addEventListener('hashchange',route);route();
 function mb(){const h=location.hash;document.querySelectorAll('#mbar a').forEach(a=>a.classList.toggle('on',a.dataset.n==='home'?(h===''||h==='#/'||h==='#'):h.startsWith('#/t')))}addEventListener('hashchange',mb);mb();
 </script></body></html>
