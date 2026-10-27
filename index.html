@@ -206,7 +206,7 @@ function home(){
  <div class="micons">${PICS.map(p=>`<a href="#/t/${p[2]}"><i>${p[0]}</i>${esc(T(l.id,p[1]))}</a>`).join('')}</div></div>`).join('')}</div>
  <div class="mart" style="background-image:url(${IMG.plate})">${LANGS.map((l,i)=>`<svg class="sv${i?'':' on'}" data-i="${i}" viewBox="880 0 720 375" preserveAspectRatio="none">${panelSvg(i)}${LANGS.map((m,k)=>`<text x="${PX[k]}" y="132" text-anchor="middle" fill="#fff" font-size="21" font-family="Poppins,sans-serif" font-weight="${k===i?700:500}" opacity="${k===i?1:.85}">${m.n}</text>`).join('')}</svg>`).join('')}</div>
  <div class="mnav"><div class="mnames">${LANGS.map((l,i)=>`<button class="mbn${i?'':' on'}" data-a="dot" data-i="${i}">${l.n}</button>`).join('')}</div>
- <div class="mrow"><button class="mar" data-a="prev" aria-label="Anterior">${IC.l}</button><div class="mdots">${LANGS.map((l,i)=>`<button class="mdt${i?'':' on'}" data-a="dot" data-i="${i}" aria-label="${l.n}"></button>`).join('')}</div><button class="mar" data-a="next" aria-label="Siguiente">${IC.r}</button></div></div></section>`;
+ <div class="mrow"><button class="mar" data-a="prev" aria-label="Anterior">${IC.l}</button><div class="mdots">${LANGS.map((l,i)=>`<button class="mdt${i?'':' on'}" data-a="dot" data-i="${i}" aria-label="${l.n}"></button>`).join('')}</div><button class="mar" data-a="next" aria-label="Siguiente">${IC.r}</button></div></div><div class="led" aria-hidden="true"><div class="prog" id="prog2"></div></div></section>`;
  const mb=$('.mb');let sx=0;mb.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;paused=true},{passive:true});mb.addEventListener('touchend',e=>{paused=false;const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>45){stop();go(cur+(d<0?1:-1))}});
  const h=$('.ban');h.onmouseenter=()=>paused=true;h.onmouseleave=()=>paused=false;h.onfocusin=()=>paused=true;h.onfocusout=()=>paused=false;
  cur=0;start();const i0=LANGS.findIndex(x=>x.id===L);if(i0>0)go(i0);fitAll()}
@@ -218,7 +218,7 @@ function go(i){cur=(i+LANGS.length)%LANGS.length;
  document.querySelectorAll('.sl,.ms,.sv').forEach(e=>e.classList.toggle('on',+e.dataset.i===cur));
  document.querySelectorAll('.dt,.bn,.mbn,.mdt').forEach(e=>e.classList.toggle('on',+e.dataset.i===cur));start()}
 function start(){clearInterval(timer);cancelAnimationFrame(prog);let t0=performance.now(),last=t0;const bar=$('#prog');
- const tick=n=>{if(!bar||!document.body.contains(bar))return;if(paused)t0+=n-last;last=n;const pc=Math.min(100,(n-t0)/60);bar.style.width=pc+'%';bar.parentNode.style.setProperty('--p',pc+'%');prog=requestAnimationFrame(tick)};prog=requestAnimationFrame(tick);
+ const tick=n=>{if(!bar||!document.body.contains(bar))return;if(paused)t0+=n-last;last=n;const pc=Math.min(100,(n-t0)/60);for(const b of [bar,$('#prog2')])if(b){b.style.width=pc+'%';b.parentNode.style.setProperty('--p',pc+'%')};prog=requestAnimationFrame(tick)};prog=requestAnimationFrame(tick);
  timer=setInterval(()=>{if(!paused&&!spkOn){stop();go(cur+1)}},6000)}
 function listado(q){
  head('p');const f=TR.filter(t=>!q||(t.n+t.s+t.d).toLowerCase().includes(q.toLowerCase()));const ord=ORD.filter(id=>f.includes(getT(id)));
