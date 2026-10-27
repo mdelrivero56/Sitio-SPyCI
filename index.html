@@ -244,6 +244,59 @@ dialog{margin:auto}
 .opx li>span{font-size:1.6rem;flex:none;width:2.2rem;text-align:center}
 .opx b{display:block;color:var(--blue)}.opx small{display:block;font-size:.9rem;line-height:1.4;margin-top:.1rem}
 .opsay{border-left:5px solid #9a6bd0;background:#fff8e6;border-radius:10px;padding:.7rem .9rem;margin:.6rem 0;font-weight:600;line-height:1.5}
+
+/* ===== DISEÑO INSTITUCIONAL: ficha de trámite ===== */
+.det{--blue:#004EAA;--navy:#003a82;--ink:#1d2b4a;gap:1.5rem;padding:1.5rem 3vw 2.5rem;background:#f4f6fb}
+.det .main{border:1px solid #d5dbe8;border-radius:4px;box-shadow:0 1px 3px #0a2f7a14;background:#fff}
+.det .side{border:1px solid #d5dbe8;border-radius:4px;box-shadow:0 1px 3px #0a2f7a14}
+.det .side h3{background:#004EAA;border-bottom:4px solid #9568C6;padding:1.05rem 1.1rem;letter-spacing:.04em}
+.det .side h3 span{font-size:.92rem;font-weight:700}
+.det .side .rw>button:first-child{font-weight:600;color:#1d2b4a}
+.det .side button.on{background:#eaf1fb;border-left-color:#004EAA;color:#004EAA;font-weight:700}
+.det .side button .gi{background:#eef3fb;border:1px solid #d3ddee;color:#004EAA}
+.det .side button.on .gi{background:#fff;border-color:#004EAA;color:#004EAA}
+.det .side button:after{color:#8a97b8}.det .side button.on:after{color:#004EAA}
+.det .sp2{width:2.4rem;height:2.4rem;border:1.5px solid #004EAA;color:#004EAA;background:#fff}
+.det .sp2:hover{background:#eaf1fb}.det .sp2.play{background:#ffbf3c;color:#000;border-color:#ffbf3c}
+.det .side button.sp2{border:1.5px solid #004EAA}
+.crumb2{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.7rem 2rem;background:#f4f6fb;border-bottom:1px solid #d5dbe8;font-size:.88rem}
+.crumb2 nav{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.crumb2 a{color:#004EAA;font-weight:600}.crumb2 a:hover{text-decoration:underline}.crumb2 span{color:#8a97b8}.crumb2 b{color:#1d2b4a}
+.crumb2 button{color:#004EAA;font-weight:700;border:1.5px solid #004EAA;border-radius:6px;padding:.3rem .8rem;background:#fff;min-height:2.2rem}.crumb2 button:hover{background:#eaf1fb}
+.ph2{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;padding:1.8rem 2rem;border-top:4px solid #004EAA;border-bottom:1px solid #d5dbe8;background:linear-gradient(180deg,#f5f8fd,#fff)}
+.ph2 .il{width:11rem;height:9rem;object-fit:contain;background:#fff;border:1px solid #d5dbe8;border-radius:6px;padding:.6rem;flex:none}
+.ph2t{flex:1;min-width:250px}
+.dep{display:block;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;color:#5a6b8c;margin-bottom:.45rem}
+.ph2 h1{color:#004EAA;font-size:clamp(1.7rem,2.6vw,2.3rem);font-weight:700;line-height:1.15}
+.ph2 h4{color:#7d52b0;font-size:1.05rem;font-weight:600;margin:.3rem 0 .6rem}
+.ph2 p{color:#26324f;line-height:1.6;font-size:1.05rem;max-width:60ch}
+.det .btns{gap:.7rem;margin-top:1rem}
+.det .btns>button,.det .btns>a{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:6px;padding:.7rem 1.3rem;font-weight:700;font-size:1rem;min-height:3rem;width:auto;border:2px solid #004EAA;background:#004EAA;color:#fff;cursor:pointer}
+.det .btns>.pri:hover{background:#003a82;border-color:#003a82}
+.det .btns>.sec,.det .btns>.alt{background:#fff;color:#004EAA}
+.det .btns>.sec:hover,.det .btns>.alt:hover{background:#eaf1fb}
+.det .btns svg{width:1.15rem;height:1.15rem}
+.fact{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;border-bottom:1px solid #d5dbe8;background:#fff}
+.fact>div{padding:1.1rem 2rem;border-right:1px solid #e3e7f1}.fact>div:last-child{border-right:0}
+.fact small{display:block;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;color:#5a6b8c;margin-bottom:.3rem}
+.fact b{display:block;color:#1d2b4a;font-size:1rem;line-height:1.4}
+.blk{padding:1.5rem 2rem;border-bottom:1px solid #e3e7f1;margin:0}
+.bh{display:flex;align-items:center;gap:.7rem;font-size:1.2rem;color:#004EAA;margin:0 0 .9rem;padding-left:.8rem;border-left:4px solid #9568C6;line-height:1.2}
+.bh .bi{display:grid;place-items:center;color:#004EAA}.bh .bi svg{width:1.4rem;height:1.4rem}
+.bh .sp2{margin-left:auto}
+.bp{color:#26324f;line-height:1.6;font-size:1.05rem}
+.rl{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.6rem;padding:0;margin:0 0 1rem}
+.rl li{display:flex;align-items:center;gap:.7rem;border:1px solid #d5dbe8;border-radius:6px;padding:.65rem .85rem;background:#fbfcfe;font-weight:600;color:#1d2b4a}
+.rl i{flex:none;width:1.5rem;height:1.5rem;border-radius:50%;background:#004EAA;color:#fff;display:grid;place-items:center;font-style:normal;font-size:.8rem}
+.det .dnd{margin:0;border:0;border-bottom:1px solid #e3e7f1;border-radius:0;background:#fff;padding:1.5rem 2rem}
+.det .dnd .bh{margin-bottom:1rem}
+.det .dnd figure{width:9.5rem}.det .dnd figure svg{border:1px solid #d5dbe8;border-radius:6px}
+.det .addr{font-weight:600;color:#1d2b4a;line-height:1.5}
+.det .dnd details{border-top:1px solid #e3e7f1;margin-top:1.1rem}
+.det .dnd summary{color:#004EAA}
+.det .pill{background:#004EAA;border-radius:6px;font-weight:700}.det .pill:hover{background:#003a82}
+.foot{padding:1rem 2rem 1.4rem;font-size:.85rem;color:#5a6b8c;line-height:1.5}
+@media(max-width:1000px){.fact{grid-template-columns:1fr}.fact>div{border-right:0;border-bottom:1px solid #e3e7f1;padding:.9rem 1.2rem}.fact>div:last-child{border-bottom:0}}
+@media(max-width:760px){.crumb2{padding:.6rem 1rem}.ph2{padding:1.2rem 1rem;gap:1rem}.ph2 .il{width:100%;height:8rem}.blk,.det .dnd{padding:1.2rem 1rem}.foot{padding:1rem}.det .btns>button,.det .btns>a{flex:1 1 100%}}
 </style></head>
 <body><div id="top"></div><div id="app"></div><nav id="mbar" aria-label="Menú móvil"><button data-a="back"><i>←</i>Atrás</button><a href="#/tramites" data-n="home"><i>🏠</i>Inicio</a><button class="ls" data-a="page"><i>🔊</i>Escuchar</button><button data-a="donde"><i>📍</i>¿Dónde?</button><button data-a="menu"><i>☰</i>Menú</button></nav><dialog id="vdlg" aria-labelledby="vq"></dialog><dialog id="dlg"></dialog><dialog id="rq"></dialog><div class="toast" id="toast"></div>
 <script>
@@ -362,16 +415,22 @@ const FACH=`<svg viewBox="0 0 120 80" fill="none" stroke="#004EAA" stroke-width=
 let VT=(()=>{try{return localStorage.getItem('vt')!=='0'}catch(e){return true}})();const vtL=()=>'🔊 Voz al tocar: '+(VT?'Sí':'No');
 const SPK=(k,t)=>`<button class="sp2" data-a="sec" data-k="${k}" data-t="${esc(t)}" aria-label="Escuchar">${IC.spk}</button>`;
 const GI={cultural:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v3C7 7.5 5 10 5 13.5 5 18 8 21 12 21s7-3 7-7.5C19 10 17 7.5 14 6V3"/><path d="M6 12.5h12"/><path d="M9 16.5l1.5-2 1.5 2 1.5-2 1.5 2"/></svg>`,deportivo:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 01-8 0z"/><path d="M8 6H4v1.5A3.5 3.5 0 007.5 11H8"/><path d="M16 6h4v1.5a3.5 3.5 0 01-3.5 3.5H16"/><path d="M12 13v4"/><path d="M9 21h6"/><path d="M10 17h4v4"/></svg>`,sociales:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 10.5s-3.5-2-3.5-4.6A2 2 0 0112 5a2 2 0 013.5.9c0 2.6-3.5 4.6-3.5 4.6z"/><path d="M3 15h3.5l3.5 2.5h5a1.5 1.5 0 000-3H12"/><path d="M15 16.8l4-2.3a1.6 1.6 0 011.8 2.6L15.5 20.5H9L6.5 18.5"/></svg>`,salud:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>`,vivienda:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M6 10v11h12V10"/><path d="M16 6V4h2.5v4.5"/><path d="M10 21v-5h4v5"/><path d="M10 12.5h4"/></svg>`,funerario:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="1.7"/><circle cx="12" cy="4" r="2.2"/><circle cx="16.3" cy="7.1" r="2.2"/><circle cx="14.7" cy="12" r="2.2"/><circle cx="9.3" cy="12" r="2.2"/><circle cx="7.7" cy="7.1" r="2.2"/><path d="M12 14.5V22"/><path d="M12 19c2.5 0 4-1 4.5-3"/></svg>`,estancia:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20V6"/><path d="M3 15h18v5"/><path d="M21 15v-2.5A2.5 2.5 0 0018.5 10H11v5"/><path d="M5.5 12.2h3.5a1.1 1.1 0 010 2.2H5.5a1.1 1.1 0 010-2.2z"/></svg>`};
+const BI=k=>`<span class="bi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${{pin:'<path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',doc:'<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/>',usr:'<circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.6 3-6 7-6s7 2.4 7 6"/>'}[k]}</svg></span>`;
 function micro(id,q){
  head('s');const L2=ORD.filter(k=>{const t=getT(k);return !q||(t.n+t.s+t.d).toLowerCase().includes(q.toLowerCase())});
  const t=id?getT(id):null;window._t=t;
  const side=`<div class="side"><h3><img src="${IMG.s2}" alt=""><span>APOYOS Y TRÁMITES<small>Toca el que necesitas</small></span></h3><div class="sg">${L2.length?L2.map(k=>{const x=getT(k);return`<div class="rw"><button class="${k===id?'on':''}" data-a="to" data-id="${k}"><b class="gi" aria-hidden="true">${GI[k]}</b><span>${x.n}</span></button>${SPK(k+'.nombre',x.n+'. '+x.s)}</div>`}).join(''):'<p class="none">Sin resultados. Prueba otra palabra.</p>'}</div></div>`;
- const body=t?`<div class="hd"><img class="il" src="${IMG[t.big||t.img]}" alt=""><div style="flex:1;min-width:240px"><div class="ttl"><h1>${t.n}</h1>${SPK(t.id+'.sirve',t.n+'. '+t.sub+'. '+t.d)}</div><h4>${t.sub}</h4><p>${t.d}</p>
- <div class="btns"><button data-a="read">🔊 Escuchar</button><button data-a="need">📄 ¿Qué necesito?</button></div></div></div>
- <div class="nav2"><button data-a="back">← Atrás</button><a href="#/tramites">🏠 Inicio</a></div>
- <div class="info"><span class="ic">i</span><div><b>¿Quiénes pueden solicitarlo?</b><p>${t.w}</p></div>${SPK(t.id+'.quien','¿Quiénes pueden solicitarlo? '+t.w)}</div>
- <div class="dnd"><h3>📍 ¿Dónde acudir? ${SPK(t.id+'.donde','¿Dónde acudir? '+ADDR)}</h3><div class="dr"><figure>${FACH}<figcaption>Así se ve la oficina<br>(foto por agregar)</figcaption></figure><div><p>${ADDR}</p><div class="btns"><a class="how" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDR)}">🗺️ Cómo llegar</a><button class="how alt" data-a="tel">📞 Llamar</button></div></div></div><details><summary>Otras oficinas cerca de ti <em>(muestra)</em></summary>${MODS.map(m=>`<div class="md"><b>${m[0]}</b><small>${m[1]}</small></div>`).join('')}</details></div>
- ${t.url?`<div style="margin:0 1.2rem 1.2rem"><a class="pill" href="${t.url}" target="_blank" rel="noopener">Hacer el trámite en línea</a></div>`:''}`
+ const body=t?`<div class="crumb2"><nav aria-label="Ruta de navegación"><a href="#/">Inicio</a><span aria-hidden="true">›</span><a href="#/tramites">Trámites y servicios</a><span aria-hidden="true">›</span><b aria-current="page">${t.n}</b></nav><button type="button" data-a="back">← Atrás</button></div>
+ <header class="ph2"><img class="il" src="${IMG[t.big||t.img]}" alt=""><div class="ph2t"><span class="dep">Secretaría de Pueblos y Comunidades Indígenas</span><div class="ttl"><h1>${t.n}</h1>${SPK(t.id+'.sirve',t.n+'. '+t.sub+'. '+t.d)}</div><h4>${t.sub}</h4><p>${t.d}</p>
+ <div class="btns"><button class="pri" data-a="need">¿Qué necesito?</button><button class="sec" data-a="read">${IC.spk}Escuchar</button></div></div></header>
+ <section class="fact" aria-label="Resumen del trámite"><div><small>Dirigido a</small><b>${t.w}</b></div><div><small>Requisitos</small><b>${(REQ[t.id]||[]).length} documentos</b></div><div><small>Atención</small><b>${t.url?'En línea y en oficina':'En oficina'} · Chihuahua capital</b></div></section>
+ <section class="blk" aria-labelledby="h-quien"><h2 class="bh" id="h-quien">${BI('usr')}¿Quiénes pueden solicitarlo?${SPK(t.id+'.quien','¿Quiénes pueden solicitarlo? '+t.w)}</h2><p class="bp">${t.w}</p></section>
+ <section class="blk" aria-labelledby="h-req"><h2 class="bh" id="h-req">${BI('doc')}Requisitos${SPK(t.id+'.requisitos',reqText(t))}</h2>
+ <ul class="rl">${(REQ[t.id]||[]).map(k=>`<li><i aria-hidden="true">✓</i><span>${IT[k][1]}</span></li>`).join('')}</ul>
+ <div class="btns"><button class="pri" data-a="need">Ver qué llevar</button><button class="sec" data-a="otherpapers" data-id="${t.id}">¿No tienes estos papeles?</button></div></section>
+ <section class="dnd blk" aria-labelledby="h-donde"><h2 class="bh" id="h-donde">${BI('pin')}¿Dónde acudir?${SPK(t.id+'.donde','¿Dónde acudir? '+ADDR)}</h2><div class="dr"><figure>${FACH}<figcaption>Así se ve la oficina<br>(foto por agregar)</figcaption></figure><div><p class="addr">${ADDR}</p><div class="btns"><a class="how pri" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDR)}">Cómo llegar</a><button class="how alt sec" data-a="tel">Llamar</button></div></div></div><details><summary>Otras oficinas cerca de ti <em>(muestra)</em></summary>${MODS.map(m=>`<div class="md"><b>${m[0]}</b><small>${m[1]}</small></div>`).join('')}</details></section>
+ ${t.url?`<div class="blk"><a class="pill" href="${t.url}" target="_blank" rel="noopener">Hacer el trámite en línea</a></div>`:''}
+ <p class="foot">Información de referencia. Confirma requisitos, horarios y costos directamente con la dependencia antes de acudir.</p>`
  :`<div class="hd"><div style="flex:1;min-width:240px"><div class="ttl"><h1>Pueblos Indígenas de Chihuahua</h1>${SPK('micrositio','Pueblos Indígenas de Chihuahua. Apoyos y trámites del Gobierno del Estado. Elige a la izquierda lo que necesitas.')}</div><h4>Apoyos y trámites del Gobierno del Estado</h4><p>Información clara y sencilla para nuestras comunidades.</p>
  <p class="pick">👈 Elige a la izquierda lo que necesitas.</p><div class="btns"><button data-a="page">🔊 Escuchar</button></div></div></div>`;
  $('#app').innerHTML=`<div class="det"><aside>${side}</aside><main class="main" id="center">${body}</main></div>`;
